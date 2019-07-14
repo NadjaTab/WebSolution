@@ -1,0 +1,29 @@
+﻿@page
+@model NorthwindWeb.Pages.CustomersModel
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="row">
+    <h1 class="display-4">Customers</h1>
+    <table class="table">
+        <thead class="thread-inverse">
+            <tr><th>Customer Name</th></tr>
+        </thead>
+        <tbody>
+            @foreach (string name in Model.Customers)
+            {
+             //   string selectedRow = "";
+             //   if (Model.Customers.Equals(name))
+             //   {
+             //       selectedRow = "success";
+             //   }
+             //   <tr class="@selectedRow"></tr>
+                <tr>
+                    <td>@name</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
